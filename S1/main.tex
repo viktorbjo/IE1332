@@ -1,0 +1,102 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{url}
+\title{STM32WB55}
+\author{viktor björkén }
+\date{April 2023}
+
+
+
+
+\begin{document}
+
+\maketitle
+
+\section{Introduktion}
+Detta kommer att vara en kortare rapport om kretsen STM32WB55 från ST som kommer att användas vid ett system för trådlös kommunikation. Vi kommer att granska denna krets och anföra en lista med olika punkter med krav som företaget bör följa innan produkten släpps. Vi kommer också prata om hur företaget ska gå till väga för att lyckas med dessa krav samt hur företaget bör agera för att så tidigt som möjligt komma igång i produktutvecklingsprocessen.
+
+\section{Kravlista}
+\subsection{EMC}
+\subsubsection{Design}
+\begin{itemize}
+    \item Design med EMC i åtanke
+        
+        Det är viktigt att ha EMC i åtankte när man designar sitt kretskort. Detta är något man borde ha tänkt på från början när man började designa sitt kort. Anledningen till detta är att det är viktigt att man ser till att kortet inte stör eller tar emot störningar från andra kort. Detta kommer göra det möjligt att använda kortet oberoende av dess omgivning, vilket annars kan skapa problem om korten störs av varandra \cite{Williams2011-dz}
+
+        För att se till att detta följ och att korten inte stör varandras signaler kan man göra så kallade EMC tester. Det är också viktigt att komponenterna man väljer är välfungerade EMC mesigt.
+    
+    \item Välj rätt komponenter (DfS)
+    
+        Detta kan våra ganska svårt då det är svårt att i förväg veta vilka komponenter som du kan använda för att undvika störningar. För att försöka lösa detta behöver man kolla igenom alla olika komponenter, speciellt de mest centrala komponenterna genom att fråga tillverkaren. Detta är också problematiskt om allt redan är klart och produkten ska vara redo för serietillverkning.   
+
+\end{itemize}
+
+\subsubsection{PCB}
+Innan produkten släpps är det viktigt att PCBn uppfyller minimum kraven för "utsläpp" och "motaglighet"
+\begin{itemize}
+    
+    \item Ledningsbundna utsläpp
+
+        När man konstruerar en krets är en viktig punkt att se til så att kretsen inte agerar som "patch antenn". Detta kan bero på layouten på PCBn. Beroende på storleken på kortet samt dess frekvens. Det kan också ha att göra med hur kablarna på kortet väljs att placeras. \cite{Williams2011-dz}
+    
+\end{itemize}
+
+\subsection{CE-märkning}
+Det är också viktigt att se till så att sin produkt följer CE-kraven som finns inom EU för elektronikproduktor ska få säljas.
+
+Eftersom produkten redan är designad och klar för produktion får vi anta att vi har försökt att följa de direktiv som finns. Dessa är bland annat.
+\begin{itemize}
+    \item att det ska finnas skydd mot elchock.
+    \item att det ska finnas skydd mot elbrand.
+    \item att produkten inte ska störa eller slå ut andra elektriska produkter, så kallad elektromagnetisk kompatibilitet (EMC). \cite{noauthor_ce-market_nodate}
+
+    Det krävs ingen extern myndighet som kollar att dessa krav följs för en CE-märkning men vissa  CE-märkningsdirektiv kräver ett anmält organ. Detta är något som börs kollas upp om det gäller för våran produkt. \cite{pdf_elsäkerhetsverket}
+
+    Efter detta är det som tidigare nämnt viktigt att testa och kontrollera så att produkten översenstämmer med de direktiv som krävs för märkningen samt skriva all den tekniska dokumentation som krävs.
+\end{itemize}
+
+\subsection{Andra krav}
+
+    \begin{itemize}
+        \item RoHS(Restriction of Hazardous Substances)
+        \item WEEE (Waste Electric and Electronic Equipment)
+        \item Ecodesign
+        \item Reach (Registration, Evaluation, Authorisation and Restriction of Chemicals)
+        \item LVD (Low Voltage Directive)
+        \item RED (Radio Equipment Directive)
+    \end{itemize}
+
+\section{Få in kraven tidigt i utvecklingsprocessen}
+
+För att så tidigt som möjligt få in kraven i projektutvecklingsprocessen bör man redan innan tillverkning se över de direktiv och standarder som finns för den branch man planerar att utveckla.
+
+Det man kan göra för att förhindra att behöva gå tillbaka är att lägga upp en industrialiseringsprocess tidigt. \cite{andersson_2019}
+\begin{itemize}
+    \item Tidsplan för industrialiseringen
+
+        Detta för att så tidigt som möjligt få en översikt över vad som krävs under projektets gång och vilka svårheter som kan uppstå. Med hjälp av detta kan man också klargöra alla krav som krävs och därefter jobba med de kontinuerligt över projektets gång. 
+        
+    \item Klaragöra vilka direktiv och standarder som produkten omfattas av och ska uppfylla
+
+        Som tidigare nämnt är det önskevärt att tidigt se till att man har koll på vad som krävs gällande direktiv och standarder gäller för sin önskevärda produkt.       
+    
+    \item Se över val av komponenter
+
+        Att se över val av komponenter som förutom funkar för kretsen ska vara skyddade enligt EMC kan vara svårt. Men att tidigt klura ut vilka komponenter som kan användas kommer att dra ner kostnaden om det visar sig att komponenter behövs byta, också få in kraven tidigt i processen. 
+
+    \item Vara klar över vilka tester som ska utföras
+
+        Om man tidigt vet vilka tester som krävs kommer man också se till att man bygger allt direkt i konstruktionssteget.  
+    
+    \item Uppräta en testspecifikation
+
+    \item Eventuella tillval
+
+\end{itemize}
+
+
+\bibliography{mybib}
+\bibliographystyle{IEEEtran}
+
+
+\end{document}
