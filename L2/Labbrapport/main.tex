@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\input{lib/includes}
+\input{lib/acronyms}
+
+
+\title{Labbrapport}
+\author{viktor björkén }
+\date{Maj 2023}
+
+\begin{document}
+
+\maketitle
+
+\section{Kortet}
+
+Jag har valt att göra en s.k. "Step-Down Converter" baserat på TPS5430 chippet. Jag har under konstruktionens gång följt en \textit{Evaluation Module User's Guide} ifrån Texas Instruments. Det som skiller kretsen från det tidigare nämnda databladet är att jag har valt att addera funktionen som gör det möjligt att välja vilket volt värde man vill få ut. 
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=15cm]{img/nyschema.png}
+    \caption{Bild av schematic från slvu157a datablad}
+\end{figure}
+
+För att kretsen ska kunna välja bland flera output volt värden, behöver vi kunna ändra värdet på R2 resistorn som tillsammans med R1 bygger upp en spänningsdelare.
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=15cm]{img/schema.png}
+    \caption{Bild av schematic från kiCad}
+\end{figure}
+
+Jag gör också en avikelse till genom att dra alla koppar"sladdar" direkt mellan varje komponent, enligt databladet använder de större kopparytor för att leda ihop komponenter på kretskortet. 
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=10cm]{img/print.png}
+    \caption{Bild av schematic från kiCad}
+\end{figure}
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=10cm]{img/layout.png}
+    \caption{Bild av layout från datablad}
+\end{figure}
+
+
+\end{document}
