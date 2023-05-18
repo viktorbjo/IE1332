@@ -15,7 +15,11 @@
 
 \section{Kortet}
 
-Jag har valt att göra en s.k. "Step-Down Converter" baserat på TPS5430 chippet. Jag har under konstruktionens gång följt en \textit{Evaluation Module User's Guide} ifrån Texas Instruments. Det som skiller kretsen från det tidigare nämnda databladet är att jag har valt att addera funktionen som gör det möjligt att välja vilket volt värde man vill få ut. 
+Jag har valt att göra en s.k. "Step-Down Converter" baserat på TPS5430 chippet.
+Jag har under konstruktionens gång följt en \textit{Evaluation Module User's
+Guide} ifrån Texas Instruments. Det som skiller kretsen från det tidigare
+nämnda databladet är att jag har valt att addera funktionen som gör det möjligt
+att välja vilket volt värde man vill få ut. 
 
 \begin{figure}[htp]
     \centering
@@ -23,19 +27,31 @@ Jag har valt att göra en s.k. "Step-Down Converter" baserat på TPS5430 chippet
     \caption{Bild av schematic från slvu157a datablad}
 \end{figure}
 
-För att kretsen ska kunna välja bland flera output volt värden, behöver vi kunna ändra värdet på R2 resistorn som tillsammans med R1 bygger upp en spänningsdelare.
+För att kretsen ska kunna välja bland flera output volt värden, behöver vi
+kunna ändra värdet på R2 resistorn som tillsammans med R1 bygger upp en
+spänningsdelare.
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{img/schema.png}
+    \includegraphics[width=15cm]{img/schemalab.png}
     \caption{Bild av schematic från kiCad}
 \end{figure}
 
-Jag gör också en avikelse till genom att dra alla koppar"sladdar" direkt mellan varje komponent, enligt databladet använder de större kopparytor för att leda ihop komponenter på kretskortet. 
+Jag gör också en avikelse till genom att dra alla koppar"sladdar" direkt mellan
+varje komponent, enligt databladet använder de större kopparytor för att leda
+ihop komponenter på kretskortet. 
+
+\section{PCB layout}
+
+När jag designade kretsen valde jag att så noga som möjligt följa databladet och dess
+rekomendationer. I miitt första utkast hade jag vanliga "sladdar" mellan alla komponenter
+men sedan efter feedback valde jag att göra kortet på samma sätt som i databladet med 
+koppar plattor mellan de olika ytorna. Jag la också till EN benet från IC, där man
+beroende på om den kopplas till jord eller är flytande ger olika funktionalitet. 
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=10cm]{img/print.png}
+    \includegraphics[width=10cm]{img/nylayout.png}
     \caption{Bild av schematic från kiCad}
 \end{figure}
 
@@ -45,5 +61,29 @@ Jag gör också en avikelse till genom att dra alla koppar"sladdar" direkt mella
     \caption{Bild av layout från datablad}
 \end{figure}
 
+\section{BOM}
+
+Här under finns min BOM lista med de olika komponenter jag använt mig utav, alla delar gick
+inte att få tag i vilket gjorde att jag inte kunde färdligställa kortet.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width=10cm]{img/bom.png}
+\caption{BOM lista}
+\end{figure}
+
+\section{Slutprodukt}
+Jag hann inte att löda på flera komponeter på mitt kort vilket såklart är väldigt tråkigt
+jag var inte så stadig på handen vilket gjorde att det tog en del tid med ytmonterade 
+komponenter. Som tidigare nämnt hade jag dessutom inte alla kompontenter vilket resulterade
+i att jag inte kände behover att fortsätta löda vid ett senare tillfälle då den ändå 
+inte skulle slutföras.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width=10cm]{img/irlkort.jpeg}
+\caption{BOM lista}
+\end{figure}
 
 \end{document}
+
