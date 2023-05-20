@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2023.5.17)  20 MAY 2023 16:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2023.5.17)  20 MAY 2023 16:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1219,17 +1219,17 @@ Package pdftex.def Info: img/schemalab.png  used on input line 36.
 <img/nylayout.png, id=33, 495.35063pt x 420.82219pt>
 File: img/nylayout.png Graphic file (type png)
 <use img/nylayout.png>
-Package pdftex.def Info: img/nylayout.png  used on input line 55.
-(pdftex.def)             Requested size: 284.52756pt x 241.72044pt.
+Package pdftex.def Info: img/nylayout.png  used on input line 56.
+(pdftex.def)             Requested size: 204.85672pt x 174.03435pt.
 <img/layout.png, id=34, 601.4972pt x 518.6878pt>
 File: img/layout.png Graphic file (type png)
 <use img/layout.png>
 Package pdftex.def Info: img/layout.png  used on input line 61.
-(pdftex.def)             Requested size: 284.52756pt x 245.36621pt.
+(pdftex.def)             Requested size: 204.85672pt x 176.65227pt.
 <img/bom.png, id=35, 626.34pt x 493.0922pt>
 File: img/bom.png Graphic file (type png)
 <use img/bom.png>
-Package pdftex.def Info: img/bom.png  used on input line 72.
+Package pdftex.def Info: img/bom.png  used on input line 75.
 (pdftex.def)             Requested size: 284.52756pt x 224.00366pt.
  [1
 Non-PDF special ignored!
@@ -1240,55 +1240,55 @@ nation with the same identifier (name{figure.1}) has been already used, duplica
 te ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.74 \end{figure}
+l.77 \end{figure}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.74 \end{figure}
+l.77 \end{figure}
                   <./img/nyschema.png> <./img/schemalab.png (PNG copy)>]
+<img/irlkort.jpeg, id=48, 1129.21875pt x 960.58875pt>
+File: img/irlkort.jpeg Graphic file (type jpg)
+<use img/irlkort.jpeg>
+Package pdftex.def Info: img/irlkort.jpeg  used on input line 89.
+(pdftex.def)             Requested size: 284.52756pt x 242.0374pt.
+
 [2pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.74 \end{figure}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{figure.4}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.74 \end{figure}
-                  <./img/nylayout.png (PNG copy)> <./img/layout.png>]
-<img/irlkort.jpeg, id=55, 1129.21875pt x 960.58875pt>
-File: img/irlkort.jpeg Graphic file (type jpg)
-<use img/irlkort.jpeg>
-Package pdftex.def Info: img/irlkort.jpeg  used on input line 85.
-(pdftex.def)             Requested size: 284.52756pt x 242.0374pt.
- [3pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
- has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.89 \end{document}
+l.93 \end{document}
                    pdfTeX warning (ext4): destination with the same identifier 
-(name{figure.6}) has been already used, duplicate ignored
+(name{figure.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.89 \end{document}
-                    <./img/BOM.png (PNG copy)> <./img/irlkort.jpeg>]
-(./main.aux) ) 
+l.93 \end{document}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{figure.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.93 \end{document}
+                    <./img/nylayout.png (PNG copy)> <./img/layout.png> <./img/B
+OM.png (PNG copy)>] [3pdfTeX warning (ext4): destination with the same identifi
+er (name{figure.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.93 \end{document}
+                    <./img/irlkort.jpeg>] (./main.aux) ) 
 Here is how much of TeX's memory you used:
  27980 strings out of 479304
  546947 string characters out of 5869779
- 902287 words of memory out of 5000000
+ 901287 words of memory out of 5000000
  44563 multiletter control sequences out of 15000+600000
  433110 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 107i,11n,105p,1021b,774s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/
-share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
-s/utmri8a.pfb>
-Output written on main.pdf (3 pages, 1177564 bytes).
+ 107i,11n,105p,1021b,766s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/tex
+mf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/
+urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8
+a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (3 pages, 1176692 bytes).
 PDF statistics:
  97 PDF objects out of 1000 (max. 8388607)
  65 compressed objects within 1 object stream
